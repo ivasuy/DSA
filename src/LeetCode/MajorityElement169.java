@@ -1,13 +1,8 @@
 package LeetCode;
 
 public class MajorityElement169 {
-    public static void main(String[] args) {
 
-        int [] nums = { 3, 3, 4};
-        System.out.println(majorityElement(nums));
-    }
-
-    static public int majorityElement(int[] nums) {
+     public int majorityElement(int[] nums) {
 
         // Moore’s Voting Algorithm
         int count = 0;
