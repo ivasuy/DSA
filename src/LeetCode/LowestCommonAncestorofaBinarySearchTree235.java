@@ -3,6 +3,12 @@ package LeetCode;
 import javax.swing.tree.TreeNode;
 
 public class LowestCommonAncestorofaBinarySearchTree235 {
+    public class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+     TreeNode(int x) { val = x; }
+  }
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 
         if ( root == null || root == p || root == q ){

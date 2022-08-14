@@ -46,8 +46,6 @@ public class SubstringwithConcatenationofAllWords30 {
                 }
             }
         }
-
         return result;
-
     }
 }
