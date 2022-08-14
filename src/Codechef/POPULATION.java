@@ -1,3 +1,5 @@
+package Codechef;
+
 import java.util.Scanner;
 
 public class POPULATION {
@@ -18,7 +20,6 @@ public class POPULATION {
             int res = (x-y) + z;
 
             System.out.println(res);
-
         }
     }
 }

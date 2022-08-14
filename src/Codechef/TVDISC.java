@@ -1,10 +1,14 @@
+package Codechef;
+
 import java.util.Scanner;
 
 public class TVDISC {
     public static void main(String[] args) {
+
         int t;
         Scanner in = new Scanner(System.in);
         t = in.nextInt();
+
         for(int i=0;i<t;i++) {
 
             int a, b, c, d;
