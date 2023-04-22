@@ -124,7 +124,7 @@ Step-1: ***Assigning vertical and level to every node***
 
 Step-2: ***Storing Verticals and levels to our data structure***
 
-![Untitled.png](..%2F..%2F..%2F..%2F..%2FDocuments%2FUntitled.png)
+ ***TreeMap<Integer,TreeMap<Integer,PriorityQueue<Integer>>> map = new TreeMap<>();***
 
 Step 3: ***Printing vertical order traversal from our data structure***
 ```
