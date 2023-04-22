@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc5f190-714b-4208-a4fa-3606098bc990" name="Changes" comment="mid of LL">
-      <change afterPath="$PROJECT_DIR$/src/binaryTree_Traversal/Postorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binaryTree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binaryTree_Traversal/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binaryTree/Inorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binaryTree_Traversal/Inorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binaryTree/Levelorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binaryTree_Traversal/Levelorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binaryTree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binaryTree_Traversal/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binaryTree/Postorder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binaryTree/Preorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binaryTree_Traversal/Preorder.java" afterDir="false" />
-    </list>
+    <list default="true" id="dbc5f190-714b-4208-a4fa-3606098bc990" name="Changes" comment="mid of LL" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +133,7 @@
       <workItem from="1681917268541" duration="742000" />
       <workItem from="1682040432395" duration="10089000" />
       <workItem from="1682097173898" duration="436000" />
-      <workItem from="1682100224044" duration="3388000" />
+      <workItem from="1682100224044" duration="4364000" />
     </task>
     <task id="LOCAL-00001" summary="mid of LL">
       <created>1681665392247</created>
@@ -171,16 +162,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mid of LL" />
     <option name="LAST_COMMIT_MESSAGE" value="mid of LL" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/binaryTree_Traversal/Verticalorder.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

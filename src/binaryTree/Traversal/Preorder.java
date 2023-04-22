@@ -1,4 +1,4 @@
-package binaryTree_Traversal;
+package binaryTree.Traversal;
 
 import java.util.ArrayList;
 import java.util.Stack;
