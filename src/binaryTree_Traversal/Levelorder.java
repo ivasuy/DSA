@@ -1,4 +1,4 @@
-package binaryTree;
+package binaryTree_Traversal;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -12,15 +12,14 @@ public class Levelorder {
         qu.offer(node);
 
         while(!qu.isEmpty()){
-            int size = qu.size();
-
-            for (int i = 0; i < size; i++) {
-                if(qu.peek().left != null) qu.offer(qu.peek().left);
-                if(qu.peek().right != null) qu.offer(qu.peek().right);
-                list.add(qu.poll().data);
-            }
+            Node root = qu.peek();
+            list.add(root.data);
+            qu.poll();
+            if(root.left != null) qu.offer(root.left);
+            if(root.right != null) qu.offer(root.right);
         }
-        System.out.print(list);
+        System.out.println(list);
+
     }
 
     public static void main(String[] args) {
@@ -32,6 +31,11 @@ public class Levelorder {
         root.right = new Node(3);
         root.left.left = new Node(4);
         root.left.right = new Node(5);
+        root.left.right.left = new Node(8);
+        root.right.left = new Node(6);
+        root.right.right = new Node(7);
+        root.right.right.left = new Node(9);
+        root.right.right.right = new Node(10);
 
         tree.printLevelorder(root);
     }

@@ -1,4 +1,4 @@
-package binaryTree;
+package binaryTree_Traversal;
 
 class Node {
     int data;
