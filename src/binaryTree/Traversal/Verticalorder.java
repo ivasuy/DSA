@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Verticalorder {
 
-   Node node;
+        Node node;
         int vertical;
         int level;
 
@@ -17,7 +17,7 @@ public class Verticalorder {
     public void printVertical(Node root){
         /*First add vertical than add level than node
         TreeMap stores value in sorted order so if vertical is -2 it will be at first index*/
-       TreeMap<Integer,TreeMap<Integer,PriorityQueue<Integer>>> map = new TreeMap<>();
+        TreeMap<Integer,TreeMap<Integer,PriorityQueue<Integer>>> map = new TreeMap<>();
         /*BFS traversal so Queue*/
         Queue<Pair> qu = new LinkedList<>();
         qu.offer(new Pair(root, 0, 0));
