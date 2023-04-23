@@ -4,38 +4,36 @@ import java.util.*;
 
 public class Verticalorder {
 
-    class Pair{
+   Node node;
         int vertical;
         int level;
-        Node node;
-        Pair(int vertical, int level, Node node){
+
+        Pair(Node node, int vertical, int level){
+            this.node = node;
             this.vertical = vertical;
             this.level = level;
-            this.node = node;
         }
     }
     public void printVertical(Node root){
         /*First add vertical than add level than node
         TreeMap stores value in sorted order so if vertical is -2 it will be at first index*/
-        TreeMap<Integer,TreeMap<Integer,PriorityQueue<Integer>>> map = new TreeMap<>();
+       TreeMap<Integer,TreeMap<Integer,PriorityQueue<Integer>>> map = new TreeMap<>();
         /*BFS traversal so Queue*/
         Queue<Pair> qu = new LinkedList<>();
-        qu.offer(new Pair(0, 0, root));
+        qu.offer(new Pair(root, 0, 0));
 
         while (!qu.isEmpty()){
             Pair T = qu.poll();
-            Node node = T.node;
-            int currVertical = T.vertical;
-            int currLevel = T.level;
+            Node currNode = T.node;
+            int vertical = T.vertical;
+            int level = T.level;
 
-            if(!map.containsKey(currVertical)) map.put(currVertical, new TreeMap<>());
-            if(!map.get(currVertical).containsKey(currLevel)) map.get(currVertical).put(currLevel, new PriorityQueue<>());
-            map.get(currVertical).get(currVertical).offer(node.data);
+            if(!map.containsKey(vertical)) map.put(vertical, new TreeMap<>());
+            if(!map.get(vertical).containsKey(level)) map.get(vertical).put(level, new PriorityQueue<>());
+            map.get(vertical).get(level).offer(currNode.data);
 
-            /*Moving left vertical - 1 & level + 1*/
-            if(node.left != null) qu.offer(new Pair(currVertical - 1, currLevel + 1, node.left));
-            /*Moving right vertical + 1 & level + 1*/
-            if(node.right != null) qu.offer(new Pair(currVertical + 1, currLevel + 1, node.right));
+            if(currNode.left != null) qu.offer(new Pair(currNode.left, vertical - 1, level + 1));
+            if(currNode.right != null) qu.offer(new Pair(currNode.right, vertical + 1, level + 1));
         }
 
         /*Now finally adding values*/
